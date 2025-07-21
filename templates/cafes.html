@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your local cafes</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+<h1>Your local cafes</h1>
+<table>
+    <tbody>
+    <tr>
+        <th>Cafe Name</th><th>Location</th><th>Open</th><th>Close</th><th>Coffee</th><th>Wifi</th><th>Power</th>
+    </tr>
+    {% for cafe in cafes[1:]: %}
+    <tr>
+        <td>{{ cafe.split(",")[0].strip() }}</td>
+        <td><a href='{{ cafe.split(",")[1].strip() }}'>Map link</a></td>
+        <td>{{ cafe.split(",")[2].strip() }}</td>
+        <td>{{ cafe.split(",")[3].strip() }}</td>
+        <td>{{ cafe.split(",")[4].strip() }}</td>
+        <td>{{ cafe.split(",")[5].strip() }}</td>
+        <td>{{ cafe.split(",")[6].strip() }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<button>
+<a href="{{url_for('index') }}">Return to Home</a></button>
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #282525;
+    font-family: "Lucida Sans Typewriter",sans-serif;
+    color: white;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    min-height: 85vh;
+}
+table {
+    margin: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; /* optional, based on use case */
+}
+
+th,
+td {
+  margin: 0;
+  padding: .25rem;
+  border: none;
+  text-align: left;
+  vertical-align: top;
+    border-bottom: solid grey 1px;
+}
+
+main hr{
+    border: 2px solid lightgray;
+    margin: 1rem;
+    min-width: 90%;
+
+}
+main p{
+    text-align: center;
+    color: antiquewhite;
+    width: 70%;
+}
+a.btn-cta{
+    background-color: gold;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    margin:1rem;
+    text-decoration: none;
+}
+a.btn-cta:hover{
+    background-color: goldenrod;
+}
+td a, button a{
+    color: goldenrod;
+    text-decoration: none;
+}
+button{
+    margin:2rem 4rem;
+}
