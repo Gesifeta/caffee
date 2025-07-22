@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new Cafe</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+<form action="{{ url_for('add_cafe')}}" method="post">
+  <div class="form-control">
+    <label>Cafe Name</label>
+    <input type="text" required name="cafe_name" class="form-control">
+  </div>
+  <div class="form-control">
+    <label>Location</label>
+    <input type="url" required name="location" class="form-control">
+  </div>
+  <div class="form-control">
+    <label>Opening Time e.g 8:00AM</label>
+    <input type="text" required name="open" class="form-control">
+  </div>
+  <div class="form-control">
+    <label>Close Time. E.g 5:30PM</label>
+    <input type="text" required name="close" class="form-control">
+  </div>
+  <div class="form-control">
+    <label>Coffee Rating</label>
+    <select name="coffee_rating" class="form-control">
+      <option value="☕">☕</option>
+      <option value="☕☕">☕☕</option>
+      <option value="☕☕☕">☕☕☕</option>
+      <option value="☕☕☕☕">☕☕☕☕</option>
+      <option value="☕☕☕☕☕">☕☕☕☕</option>
+    </select>
+  </div>
+  <div class="form-control">
+    <label>Wifi Strength Rating</label>
+    <select name="wifi_rating" class="form-control">
+      <option value="💪">💪</option>
+      <option value="💪💪">💪💪</option>
+      <option value="💪💪💪">💪💪💪</option>
+      <option value="💪💪💪💪">💪💪💪💪</option>
+      <option value="💪💪💪💪💪">💪💪💪💪💪</option>
+    </select>
+  </div>
+  <div class="form-control">
+    <label>Power Socket Availability</label>
+    <select name="power_availability" class="form-control">
+      <option value="🔌">🔌</option>
+      <option value="🔌🔌">🔌🔌</option>
+      <option value="🔌🔌🔌">🔌🔌🔌</option>
+      <option value="🔌🔌🔌🔌">🔌🔌🔌🔌</option>
+      <option value="🔌🔌🔌🔌🔌">🔌🔌🔌🔌🔌</option>
+
+    </select>
+  </div>
+  <div  class="btn-group">
+    <button type="submit" >Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>
+</body>
+</html>

@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
+<div class="container-cafe">
 <h1>Your local cafes</h1>
+    <a style="margin-left: 3rem" href="{{ url_for('add_cafe')}}"> <button class="btn-add"> Add</button></a>
 <table>
     <tbody>
     <tr>
@@ -25,7 +27,8 @@
     {% endfor %}
     </tbody>
 </table>
-<button>
+<button style="margin-left: 3rem" >
 <a href="{{url_for('index') }}">Return to Home</a></button>
+</div>
 </body>
 </html>

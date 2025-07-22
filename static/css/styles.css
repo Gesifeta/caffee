@@ -21,7 +21,9 @@ main{
     min-height: 85vh;
 }
 table {
-    margin: 2rem;
+    border: solid 1px gray;
+    max-width: 80%;
+    margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%; /* optional, based on use case */
@@ -53,7 +55,7 @@ a.btn-cta{
     color: #ffffff;
     border-radius: 12px;
     padding: .5rem 1rem;
-    margin:1rem;
+    margin: 3rem;
     text-decoration: none;
 }
 a.btn-cta:hover{
@@ -62,10 +64,54 @@ a.btn-cta:hover{
 td a, button a{
     color: goldenrod;
     text-decoration: none;
-
+    align-self: flex-start;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: .5rem;
+    gap: .5rem;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 3rem;
 
 }
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    max-width: 600px;
+    padding: 1rem 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 12px;
+}
 button{
-padding:0.5rem 1rem;
-    margin:1rem 2rem;
+    min-width: 100px;
+    padding:0.5rem 1rem;
+    align-self: flex-start;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+}
+.btn-add{
+    background-color: green;
+    border: none;
+}
+
+.btn-add:hover{
+    background-color: chartreuse;
+}
+button:hover{
+    background-color: gold;
+    color: white;
+}
+.container-cafe{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
